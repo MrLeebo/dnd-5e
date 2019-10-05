@@ -1,4 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
+
+MonsterType.propTypes = {
+  node: PropTypes.object.isRequired,
+}
 
 export default function MonsterType({ node }) {
   return (

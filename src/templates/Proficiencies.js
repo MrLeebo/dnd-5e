@@ -1,16 +1,9 @@
 import React from "react"
-//import Layout from "../components/layout"
+import PropTypes from "prop-types"
 
-/*
-name
-type
-classes {
-  name
+Proficiencies.propTypes = {
+  pageContext: PropTypes.object.isRequired,
 }
-races {
-  name
-}
-*/
 
 export default function Proficiencies({ pageContext }) {
   const { name, type, classes, races } = pageContext

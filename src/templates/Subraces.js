@@ -1,44 +1,9 @@
 import React from "react"
-//import Layout from "../components/layout"
+import PropTypes from "prop-types"
 
-/*
-index
-name
-race {
-  name
+Subraces.propTypes = {
+  pageContext: PropTypes.object.isRequired,
 }
-desc
-ability_bonuses
-starting_proficiencies {
-  name
-}
-starting_proficiency_options {
-  choose
-  type
-  from {
-    name
-  }
-}
-languages {
-  name
-}
-language_options {
-  choose
-  type
-  from {
-    name
-  }
-}
-racial_traits {
-  name
-}
-racial_trait_options {
-  choose
-  from {
-    name
-  }
-}
-*/
 
 export default function Subraces({ pageContext }) {
   const { name } = pageContext

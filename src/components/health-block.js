@@ -1,4 +1,9 @@
 import React from "react"
+import PropTypes from "prop-types"
+
+HealthBlock.propTypes = {
+  node: PropTypes.object.isRequired,
+}
 
 export default function HealthBlock({ node }) {
   const bonus = Math.floor((node.constitution - 10) / 2)

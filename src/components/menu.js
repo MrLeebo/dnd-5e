@@ -1,6 +1,15 @@
 import React, { memo } from "react"
+import PropTypes from "prop-types"
 
-function Menu({ className = "icon-menu" }) {
+Menu.propTypes = {
+  className: PropTypes.string,
+}
+
+Menu.defaultProps = {
+  className: "icon-menu",
+}
+
+function Menu({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

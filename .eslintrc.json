@@ -11,9 +11,7 @@
     "react/prop-types": "error",
     "react/require-default-props": "error",
     "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    // buttons and anchors have different padding, so converting our anchors to buttons would impact layouts
-    "jsx-a11y/href-no-hash": 0
+    "react-hooks/exhaustive-deps": "warn"
   },
   "globals": {
     "subject": "readonly",
