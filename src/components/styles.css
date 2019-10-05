@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h4 {
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+a,
+a:focus,
+a:hover {
+  opacity: 0.75;
+  text-decoration: none;
+  transition: opacity 0.15s ease-in;
+}
+
+a:focus,
+a:hover {
+  opacity: 1;
+}
+
+p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+}
+
+.icon-menu .secondary {
+  fill: #ccc;
+}
+
+.icon-search .primary {
+  stroke: #ccc;
+  stroke-width: 2;
+}
+
+.icon-search .secondary {
+  fill: #ccc;
+}
+
+.bg-animate,
+.bg-animate:hover,
+.bg-animate:focus {
+  transition: background-color 0.15s ease-in-out;
+}
+
+.athelas {
+  font-family: athelas, georgia, serif;
+}
+
+.tracked {
+  letter-spacing: 0.1em;
+}
+
+.tracked-tight {
+  letter-spacing: -0.1em;
+}
+
+.page-header {
+  @apply text-3xl font-bold my-5;
+}
+
+.resource-page-header {
+  @apply text-2xl uppercase tracked my-4 font-bold text-red-600;
+}
+
+.resource-content {
+  @apply text-lg leading-normal font-sans;
+}
+
+.resource-content a {
+  @apply text-red-600;
+}
+
+.section-list {
+  @apply flex flex-wrap justify-between max-w-5xl;
+}
+
+.section-header {
+  @apply block w-full text-center text-red-600 font-bold tracked-tight;
+}
+
+.section-item {
+  @apply block w-full text-red-600;
+}
+
+.section-item-card {
+  @apply border-gray-300 border-t p-3;
+}
+
+.section-item-card:hover {
+  @apply bg-gray-300;
+}
+
+.section-item-title {
+  @apply mt-0 text-lg uppercase tracked font-bold;
+}
+
+.section-item-body {
+  @apply text-base;
+}
+
+.search-input {
+  @apply w-full border-0 bg-gray-800 text-gray-100 p-1 rounded;
+  padding-left: 2rem;
+}
+
+@screen lg {
+  .resource-page-header {
+    @apply text-3xl;
+  }
+
+  .section-header {
+    @apply max-w-xs;
+  }
+
+  .section-item {
+    @apply p-1 my-1 max-w-xs;
+  }
+
+  .section-item-card {
+    @apply rounded-lg border-b border-l border-r;
+  }
+}
+
+.table tbody tr:nth-child(odd) {
+  @apply bg-gray-200;
+}

@@ -1,0 +1,37 @@
+{
+  "parser": "babel-eslint",
+  "extends": "react-app",
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["react-hooks"],
+  "rules": {
+    "react/prop-types": "error",
+    "react/require-default-props": "error",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // buttons and anchors have different padding, so converting our anchors to buttons would impact layouts
+    "jsx-a11y/href-no-hash": 0
+  },
+  "globals": {
+    "subject": "readonly",
+    "$subject": "readonly",
+    "def": "readonly",
+    "stubResolved": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect",
+      "flowVersion": "0.53"
+    }
+  }
+}

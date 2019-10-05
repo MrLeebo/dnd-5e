@@ -1,0 +1,61 @@
+{
+  "name": "dnd-5e",
+  "private": true,
+  "description": "",
+  "version": "0.1.0",
+  "author": "Jeremy Liberman <jeremy@jeremyliberman.com>",
+  "dependencies": {
+    "@gatsby-contrib/gatsby-plugin-elasticlunr-search": "^2.2.1",
+    "@mosch/gatsby-source-github": "^0.4.1",
+    "dotenv": "^6.2.0",
+    "downshift": "^3.2.7",
+    "elasticlunr": "^0.9.5",
+    "gatsby": "^2.1.22",
+    "gatsby-image": "^2.0.31",
+    "gatsby-plugin-layout": "^1.0.12",
+    "gatsby-plugin-manifest": "^2.0.21",
+    "gatsby-plugin-offline": "^2.0.24",
+    "gatsby-plugin-postcss": "^2.1.10",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sass": "^2.1.17",
+    "gatsby-plugin-sharp": "^2.0.24",
+    "gatsby-source-filesystem": "^2.0.23",
+    "gatsby-transformer-json": "^2.1.8",
+    "gatsby-transformer-sharp": "^2.1.15",
+    "lodash": "^4.17.15",
+    "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
+    "qs": "^6.7.0",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0",
+    "react-scale-text": "^1.2.2",
+    "slugify": "^1.3.4",
+    "use-media": "^1.3.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-react": "^7.13.0",
+    "eslint-plugin-react-hooks": "^1.6.0",
+    "prettier": "^1.16.4",
+    "tailwindcss": "^1.1.2"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
